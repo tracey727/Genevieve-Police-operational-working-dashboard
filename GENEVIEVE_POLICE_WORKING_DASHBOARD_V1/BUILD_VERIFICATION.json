@@ -1,0 +1,21 @@
+{
+  "product": "GENEVIEVE Police Safety & Operational Coordination™",
+  "version": "1.0.0",
+  "status": "CONTROLLED WORKING DEMONSTRATION — FICTIONAL OR CODED DATA ONLY",
+  "features": {
+    "responsive_dashboard": "PASS",
+    "local_storage": "PASS",
+    "accountability_ladder": "PASS",
+    "named_primary_backup": "PASS",
+    "append_only_audit": "PASS",
+    "closure_gates": "PASS",
+    "json_csv_export": "PASS",
+    "locked_logo_files_copied_unchanged": "PASS"
+  },
+  "limitations": [
+    "No live agency integration",
+    "No operational authority",
+    "No independent field validation",
+    "No agency-specific procedure approval"
+  ]
+}
