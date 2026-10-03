@@ -1,0 +1,22 @@
+name: Police Dashboard CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: GENEVIEVE_POLICE_WORKING_DASHBOARD_V1
+    steps:
+      - uses: actions/checkout@v4
+      - run: test -s index.html
+      - run: test -s app.js
+      - run: test -s styles.css
+      - run: test -s manifest.webmanifest
+      - run: test -s _redirects
+      - run: test ! -e vercel.json
+      - run: node --check app.js
